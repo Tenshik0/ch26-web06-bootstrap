@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap CSS-->
+
+    <!-- Bootsrap icons CDN -->
+
+    <!-- CSS Personalizado  -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <script>
+        console.log("Holi Crayoli");
+        let d = new Date();
+        console.log(`Se inicio el proceso a las ${d.getHours()} h.`);
+  
+      </script>
+  
+</head>
+<body>
+    <!-- navbar-->
+    <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+
+    </nav>
+    <!-- Acerca de -->
+    <div class="container mt-4">
+    </div>
+    <!-- Carrusel -->
+    <div class="container my-4 text-center">
+    </div>
+    <!-- Acceso a DOM -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-5 text-center">
+                <p id="name"> Mi nombre </p>
+                <p onclick="changeColorToRed()"> Cambia el color a rojo </p>
+            </div>
+        </div>
+        <!-- Botones que cambian el color-->
+        <div class="row">
+            <div class="col">
+                <button onclick="changeColorToRed()" type="button" class="btn btn-danger"> ROJO </button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-danger">Danger</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-danger">Danger</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ondas SVG -->
+    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="212529"></path> -->
+
+    <!-- Script Bootstrap-->
+    
+    <!-- Script cambia el nombre -->
+    <script>
+        const refName = document.getElementById("name");
+        console.log(refName);      
+        refName.innerHTML = "Pato <strong>Cuack</strong> ";
+    </script>
+
+    <!--Script externo -->
+    <script src="./assets/js/main.js"></script>
+    
+</body>
+</html>
